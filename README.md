@@ -2,7 +2,7 @@
 
 launch common install
 
-run into meteor mongo : 
+run into meteor mongo :  
 `db.states.insert(  
     [  
         { "_id" : ObjectId("58510f000dce863a43c3922f"), "acro" : "AL", "name" : "Alabama" },  
