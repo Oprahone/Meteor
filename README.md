@@ -3,7 +3,7 @@
 launch common install
 
 run into meteor mongo : 
-db.states.insert(
+`db.states.insert(
     [
         { "_id" : ObjectId("58510f000dce863a43c3922f"), "acro" : "AL", "name" : "Alabama" },
         { "_id" : ObjectId("58511bf00dce863a43c39230"), "acro" : "AK", "name" : "Alaska" },
@@ -57,4 +57,4 @@ db.states.insert(
         { "_id" : ObjectId("58511ebb0dce863a43c39261"), "acro" : "WI", "name" : "Wisconsin" },
         { "_id" : ObjectId("58511ec30dce863a43c39262"), "acro" : "WY", "name" : "Wyoming" },
     ]
-)
+)`
