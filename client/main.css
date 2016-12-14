@@ -1,0 +1,226 @@
+.container{
+    width:1341px;
+}
+img{
+    display: block;
+    width:960px;
+    margin:0 auto;
+}
+#Washington{
+    background-color: #000;
+}
+#modal {
+    width: 795px;
+    height: 675px;
+    background: #e9f2f7;
+    position: relative;
+    margin: 0 auto;
+}
+
+#modal .title {
+    background: #1173b2;
+    height: 75px;
+    color: #ffffff;
+    font: bold 32px/70px "Open Sans", Arial, sans-serif;
+    text-align: center;
+}
+
+#modal .title a.close-button {
+    background: #0a4c81;
+    border-radius: 25px;
+    display: inline-block;
+    color: #083356;
+    font: bold 24px/23px Arial, sans-serif;
+    padding: 3px 9px;
+    text-decoration: none;
+    height: 26px;
+    position: absolute;
+    top: 22px;
+    right: 25px;
+    opacity: .7;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+#modal .title a.close-button:hover {
+    opacity: 1;
+
+}
+
+#modal p.intro {
+    text-align: center;
+    font: 16px "Open Sans", Arial, sans-serif;
+}
+
+#modal #map {
+    width: 480px;
+    height: 340px;
+    position: absolute;
+    left: 35px;
+    top: 190px;
+}
+
+#modal .map-pop {
+    background: #0b72b7;
+    border-radius: 2px;
+    color: #fff;
+    position: absolute;
+    top: 257px;
+    left: 193px;
+    width: 93px;
+    height: 54px;
+    text-align: center;
+    font: 13px/15px "Open Sans",Arial,sans-serif;
+    padding: 7px 10px 0 10px;
+}
+
+#modal .map-pop:after {
+    top: 100%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+#modal .map-pop:after {
+    border-color: rgba(11, 114, 183, 0);
+    border-top-color: #0b72b7;
+    border-width: 10px;
+    left: 50%;
+    margin-left: -10px;
+}
+
+#modal .average, #modal .savings {
+    width: 237px;
+    height: 140px;
+    background: #fff;
+    border-radius: 4px;
+    position: absolute;
+    right: 30px;
+    text-align: center;
+    font: bold 14px/16px "Open Sans", Arial, sans-serif;
+    text-transform: uppercase;
+    -webkit-box-shadow: 0px 6px 0px 0px #e6e6e6;
+    box-shadow: 0px 6px 0px 0px #e6e6e6;
+
+}
+
+#modal .average span.price, #modal .savings span.price {
+    font-size: 72px;
+    line-height: 96px;
+    display: block;
+}
+
+#modal .average span.price { color: #c01212; }
+#modal .savings span.price { color: #12c02b; }
+
+#modal .average {
+    top: 175px;
+}
+
+#modal .savings {
+    top: 356px;
+}
+
+#modal .divider {
+    height: 36px;
+    width: 20px;
+    background: #e6e6e6;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    right: 138px;
+    bottom: 319px;
+}
+
+#modal .source {
+    color: #333;
+    font: 10px "Open Sans", Arial, sans-serif;
+    position: absolute;
+    bottom: 170px;
+    left: 35px;
+}
+
+#modal .bottom {
+    bottom: 10px;
+    position: absolute;
+    text-align: center;
+    font: 16px "Open Sans", Arial, sans-serif;
+}
+
+#modal .bottom p {
+    padding: 0 60px;
+}
+
+#modal .bottom .larger {
+    font-size: 28px;
+    padding: 0;
+    margin: 0;
+}
+
+#modal .bottom .larger span {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #1173b2;
+}
+
+/*TEST FENETRE POP-UP*/
+
+/* Popup container */
+.popup {
+    position: absolute;
+    top:142px;
+    width:34px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+    height: 122px;
+    width: 400px;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
